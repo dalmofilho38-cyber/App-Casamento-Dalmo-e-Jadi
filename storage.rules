@@ -1,0 +1,37 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    function isVerifiedAdmin() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && (
+          request.auth.token.email == 'dalmofilho38@gmail.com'
+        );
+    }
+
+    // Comprovantes Pix: envio privado, leitura exclusiva dos administradores
+    match /receipts/{orderId}/{fileName} {
+      allow read: if isVerifiedAdmin();
+      allow write: if request.resource.size <= 5 * 1024 * 1024
+        && (
+          request.resource.contentType.matches('image/.*') ||
+          request.resource.contentType == 'application/pdf'
+        );
+    }
+
+    // Fotos da galeria colaborativa: envio limitado a 5MB, leitura pública apenas de fotos aprovadas ou admin
+    match /gallery/{albumId}/{fileName} {
+      allow read: if true;
+      allow write: if request.resource.size <= 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    // Imagens do catálogo/história gerenciadas pelos noivos
+    match /editorial/{folder}/{fileName} {
+      allow read: if true;
+      allow write: if isVerifiedAdmin()
+        && request.resource.size <= 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+  }
+}
