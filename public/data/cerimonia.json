@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "updatedAt": "2026-11-17T01:46:10.429Z",
+  "version": 3,
+  "updatedAt": "2026-11-17T01:47:33.483Z",
   "updatedBy": "dalmolima38@gmail.com",
   "church": {
     "name": "Igreja Adventista do Sétimo Dia — Jardim Florestal",
@@ -40,14 +40,14 @@
     {
       "id": "padrinho-noiva-4",
       "side": "noiva",
-      "name": "Debora Caroline",
+      "name": "Débora Caroline",
       "published": true,
       "order": 4
     },
     {
       "id": "padrinho-noiva-5",
       "side": "noiva",
-      "name": "Cecília Barbosa Alves",
+      "name": "Cecília Alves",
       "published": true,
       "order": 5
     },
