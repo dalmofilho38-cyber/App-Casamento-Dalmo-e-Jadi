@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "updatedAt": "2026-11-17T01:46:10.429Z",
+  "updatedBy": "dalmolima38@gmail.com",
+  "church": {
+    "name": "Igreja Adventista do Sétimo Dia — Jardim Florestal",
+    "city": "Rio Pardo de Minas — MG",
+    "cep": "39530-000",
+    "streetAddress": "Jardim Florestal, Rio Pardo de Minas – MG",
+    "coordinates": "",
+    "mapUrl": "",
+    "photoUrl": "/images/igreja-jardim-florestal.png",
+    "dateDisplay": "Domingo, 10 de janeiro de 2027",
+    "timeDisplay": "15h",
+    "pastor": "Pr. Fabiano Paulo de Andrade",
+    "planner": "Ludimila De Giovanni"
+  },
+  "bridesmaids": [
+    {
+      "id": "padrinho-noiva-1",
+      "side": "noiva",
+      "name": "Géssica Bahia",
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "padrinho-noiva-2",
+      "side": "noiva",
+      "name": "Enndy Tainá",
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "padrinho-noiva-3",
+      "side": "noiva",
+      "name": "Cibelly Vitória",
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "padrinho-noiva-4",
+      "side": "noiva",
+      "name": "Debora Caroline",
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "padrinho-noiva-5",
+      "side": "noiva",
+      "name": "Cecília Barbosa Alves",
+      "published": true,
+      "order": 5
+    },
+    {
+      "id": "padrinho-noiva-6",
+      "side": "noiva",
+      "name": "Kayriny Coutinho",
+      "published": true,
+      "order": 6
+    }
+  ],
+  "groomsmen": [
+    {
+      "id": "padrinho-noivo-1",
+      "side": "noivo",
+      "name": "Gabriel Peres",
+      "published": true,
+      "order": 1
+    },
+    {
+      "id": "padrinho-noivo-2",
+      "side": "noivo",
+      "name": "Gustavo Ortega",
+      "published": true,
+      "order": 2
+    },
+    {
+      "id": "padrinho-noivo-3",
+      "side": "noivo",
+      "name": "Lucas Mattos",
+      "published": true,
+      "order": 3
+    },
+    {
+      "id": "padrinho-noivo-4",
+      "side": "noivo",
+      "name": "Marcos Prates",
+      "published": true,
+      "order": 4
+    },
+    {
+      "id": "padrinho-noivo-5",
+      "side": "noivo",
+      "name": "Michele de Giovanni",
+      "published": true,
+      "order": 5
+    },
+    {
+      "id": "padrinho-noivo-6",
+      "side": "noivo",
+      "name": "Lucas Oliveira",
+      "published": true,
+      "order": 6
+    }
+  ]
+}
